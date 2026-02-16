@@ -18,7 +18,7 @@ public class EmailController {
         this.mailService = mailService;
     }
 
-    @PostMapping("/contactus")
+    @PostMapping("/contact")
     public ResponseEntity<?> sendMail (@Valid @RequestBody ContactRequestDTO requestDTO) throws Exception{
         mailService.sendEmails(requestDTO);
         return ResponseEntity.ok().build();

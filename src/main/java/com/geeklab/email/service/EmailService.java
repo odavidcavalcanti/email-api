@@ -62,7 +62,7 @@ public class EmailService {
 
     public void sendEmails (ContactRequestDTO requestDTO) throws Exception {
         sendToAdmin(requestDTO);
-        //sendAutoReply(requestDTO);
+        sendAutoReply(requestDTO);
     }
 
 }
